@@ -1,3 +1,15 @@
+<p>
+<b>AddToVOSViewerNetwork.py</b> används för att läsa in ett nätverk i JSON-format (exporterat från VOSViewer) med syfte att exemplifiera hur information kan adderas till såväl klusternivå som till enskilda noder.
+</p>
+
+<p>Övriga filer:</p>
+<ul>
+  <li><b>ExampleNetwork.json</b> - 978 publikationer från Institutionen för datavetenskap vid UmU. Kluster skapade på basis av gemensamma referenser och termer från titel och abstract. Här en partitionering bestående av 16 kluster.</li>
+  <li><b>clusterInfo.txt</b> - En beskrivning av varje kluster.</li>
+  <li><b>itemInfo.txt</b> - Information rörande varje enskild nod, här ScopusID och titel. ID används för att generera länkar in till Scopus.</li>
+</ul>
+
+
 <pre><code>usage: AddToVOSViewerNetwork.py [-h] -i INPUTNETWORK -o OUTPUTNETWORK -ci CLUSTERINFO -ii ITEMINFO
 
 Add information to a VOSViewer file.
@@ -14,3 +26,8 @@ options:
 	
 	
 <pre><code>python AddToVOSViewerNetwork.py -i ExampleNetwork.json -o ExampleNetworkAugmented.json -ii itemInfo.txt -ci clusterInfo.txt	</code></pre>
+
+<p>Se vidare <b>index.html</b> där vi använder VOSViewer online för att rendera ExampleNetwork.json och EampleNetworkAugmented.json </p>
+
+<p>Tips:</p>
+<p>Som framgår av index.html så är det inte nödvändigt att ha en egen instans av VOSViewer online om man så inte önskar ("installerad på egen server"). Det går vidare bra att lagra JSON-filerna på vanliga molntjänster som t.ex. OneDrive. Detta kombinerat med att vi bäddar in renderingarna med s.k. Iframes gör att de flesta borde kunna använda sig av ett dylikt upplägg då det inte krävs ingen speciell åtkomst till IT-infrastruktur (utöver möjligheten att redigera HTML-sidor).</p>
