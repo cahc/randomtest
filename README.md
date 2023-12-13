@@ -29,5 +29,10 @@ options:
 
 <p>Se vidare <b>index.html</b> där vi använder VOSViewer online för att rendera ExampleNetwork.json och EampleNetworkAugmented.json </p>
 
-<p>Tips:</p>
-<p>Som framgår av index.html så är det inte nödvändigt att ha en egen instans av VOSViewer online om man så inte önskar ("installerad på egen server"). Det går vidare bra att lagra JSON-filerna på vanliga molntjänster som t.ex. OneDrive. Detta kombinerat med att vi bäddar in renderingarna med s.k. Iframes gör att de flesta borde kunna använda sig av ett dylikt upplägg då det inte krävs ingen speciell åtkomst till IT-infrastruktur (utöver möjligheten att redigera HTML-sidor).</p>
+<p>Övrigt:</p>
+
+<ol type="a">
+  <li>Som framgår av index.html så är det inte nödvändigt att ha en egen instans av VOSViewer online om man så inte önskar ("installerad på egen server"). Det går vidare bra att lagra JSON-filerna på vanliga molntjänster som t.ex. OneDrive. Detta kombinerat med att vi bäddar in renderingarna med s.k. Iframes gör att de flesta borde kunna använda sig av ett dylikt upplägg då det inte krävs någon speciell åtkomst till IT-infrastruktur (utöver möjligheten att redigera HTML-sidor)</li>
+  <li>VOSviewer online är ofta ett utmärkt verktyg för att visualisera olika nätverk oavsett hur dessa skapats. Säg att nätverket konstruerats i en pipeline, partitioneringen (klustren) i en annan och koordinaterna i en 2D-rymd i en tredje. Så länge denna information representeras enligt det aktuella JSON-formatet så kan VOSviewer online användas för att tillgängliggöra det hela för tredje part.</li>
+  <li>Dokumentation och beskrivning av JSON-formatet finns <a href="https://app.vosviewer.com/docs/file-types/json-file-type">här</a><./li>
+</ol>  
