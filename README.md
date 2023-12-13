@@ -7,6 +7,7 @@
   <li><b>ExampleNetwork.json</b> - 978 publikationer från Institutionen för datavetenskap vid UmU. Kluster skapade på basis av gemensamma referenser och termer från titel och abstract. Här en partitionering bestående av 16 kluster.</li>
   <li><b>clusterInfo.txt</b> - En beskrivning av varje kluster.</li>
   <li><b>itemInfo.txt</b> - Information rörande varje enskild nod, här ScopusID och titel. ID används för att generera länkar in till Scopus.</li>
+  <li><b>index.html</b> HTML-fil där vi använder VOSViewer online för att rendera ExampleNetwork.json och EampleNetworkAugmented.json</li>		
 </ul>
 
 
@@ -26,8 +27,6 @@ options:
 	
 	
 <pre><code>python AddToVOSViewerNetwork.py -i ExampleNetwork.json -o ExampleNetworkAugmented.json -ii itemInfo.txt -ci clusterInfo.txt	</code></pre>
-
-<p>Se vidare <b>index.html</b> där vi använder VOSViewer online för att rendera ExampleNetwork.json och EampleNetworkAugmented.json </p>
 
 <p>Övrigt:</p>
 
